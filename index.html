@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kaxi Wholesale Order Form</title>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
 <style>
   :root {
     --orange: #D94214;
@@ -16,24 +16,24 @@
     --muted:  #666;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: "Nunito Sans", sans-serif; background: #f7f5f2; color: var(--text); }
+  body { font-family: "Bricolage Grotesque", sans-serif; background: #f7f5f2; color: var(--text); }
 
   /* HEADER */
   .header { background: var(--linen); padding: 16px 20px; display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 100; border-bottom: 2px solid var(--border); }
   .header img { height: 48px; }
-  .header-title { font-family: Nunito; font-size: 18px; font-weight: 800; color: var(--orange); }
+  .header-title { font-family: "Bricolage Grotesque"; font-size: 18px; font-weight: 800; color: var(--orange); }
 
   /* ORDER INFO */
   .order-info { padding: 16px 20px; background: #fff; border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 10px; }
   .order-info input, .order-info select {
     flex: 1; min-width: 140px; padding: 10px 14px;
     border: 1.5px solid var(--border); border-radius: 10px;
-    font-size: 14px; font-family: inherit; background: #fafafa;
+    font-size: 14px; font-family: "Bricolage Grotesque", sans-serif; background: #fafafa;
   }
   .order-info input:focus, .order-info select:focus { outline: none; border-color: var(--blue); }
 
   /* AUTOCOMPLETE */
-  .autocomplete-wrapper { position: relative; flex: 1; min-width: 140px; }
+  .autocomplete-wrapper { position: relative; flex: 1; min-width: 200px; }
   .autocomplete-wrapper input { width: 100%; }
   .autocomplete-list {
     position: absolute; top: 100%; left: 0; right: 0;
@@ -47,7 +47,7 @@
 
   /* TABS */
   .tabs { display: flex; overflow-x: auto; background: #fff; border-bottom: 2px solid var(--border); position: sticky; top: 82px; z-index: 99; }
-  .tab-btn { padding: 12px 20px; font-size: 14px; font-weight: 700; font-family: inherit; border: none; background: none; cursor: pointer; color: var(--muted); white-space: nowrap; border-bottom: 3px solid transparent; margin-bottom: -2px; }
+  .tab-btn { padding: 12px 20px; font-size: 14px; font-weight: 700; font-family: "Bricolage Grotesque", sans-serif; border: none; background: none; cursor: pointer; color: var(--muted); white-space: nowrap; border-bottom: 3px solid transparent; margin-bottom: -2px; }
   .tab-btn.active { color: var(--blue); border-bottom-color: var(--blue); }
 
   /* PANELS */
@@ -95,7 +95,7 @@
   .sbtn:disabled { opacity: 0.3; cursor: default; }
   .sval {
     width: 48px; text-align: center; border: 1.5px solid var(--border);
-    border-radius: 8px; padding: 4px; font-size: 15px; font-family: inherit;
+    border-radius: 8px; padding: 4px; font-size: 15px; font-family: "Bricolage Grotesque", sans-serif;
   }
 
   /* FOOTER */
@@ -110,7 +110,7 @@
   .review-btn {
     background: var(--orange); color: #fff; border: none;
     border-radius: 10px; padding: 10px 20px; font-size: 15px;
-    font-weight: 800; font-family: inherit; cursor: pointer;
+    font-weight: 800; font-family: "Bricolage Grotesque", sans-serif; cursor: pointer;
   }
   .spacer { height: 80px; }
 
@@ -128,9 +128,9 @@
   .modal-line { font-size: 13px; padding: 4px 0; display: flex; justify-content: space-between; }
   .modal-grand { font-weight: 800; font-size: 16px; margin-top: 12px; padding-top: 12px; border-top: 2px solid var(--border); display: flex; justify-content: space-between; }
   .modal-btns { display: flex; gap: 10px; margin-top: 20px; }
-  .btn-back { flex: 1; background: var(--linen); color: var(--text); border: none; border-radius: 10px; padding: 0 20px; font-size: 15px; font-weight: 700; cursor: pointer; height: 44px; font-family: inherit; }
-  .btn-draft { flex: 1; background: var(--yellow); color: #333; border: none; border-radius: 10px; padding: 0 20px; font-size: 15px; font-weight: 700; cursor: pointer; height: 44px; font-family: inherit; }
-  .btn-print { flex: 2; background: var(--orange); color: #fff; border: none; border-radius: 10px; padding: 0 20px; font-size: 15px; font-weight: 700; cursor: pointer; height: 44px; font-family: inherit; }
+  .btn-back { flex: 1; background: var(--linen); color: var(--text); border: none; border-radius: 10px; padding: 0 20px; font-size: 15px; font-weight: 700; cursor: pointer; height: 44px; font-family: "Bricolage Grotesque", sans-serif; }
+  .btn-draft { flex: 1; background: var(--yellow); color: #333; border: none; border-radius: 10px; padding: 0 20px; font-size: 15px; font-weight: 700; cursor: pointer; height: 44px; font-family: "Bricolage Grotesque", sans-serif; }
+  .btn-print { flex: 2; background: var(--orange); color: #fff; border: none; border-radius: 10px; padding: 0 20px; font-size: 15px; font-weight: 700; cursor: pointer; height: 44px; font-family: "Bricolage Grotesque", sans-serif; }
 
   .ship-tag { background: var(--yellow); color: #333; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 6px; margin-left: 6px; }
 </style>
@@ -147,7 +147,12 @@
     <input id="customer" type="text" placeholder="Customer / Store Name" autocomplete="off" oninput="filterCustomers(this.value)">
     <div id="customer-list" class="autocomplete-list" style="display:none"></div>
   </div>
-  <input id="salesrep"  type="text"  placeholder="Sales Rep">
+  <select id="salesrep" onchange="handleRepChange(this)">
+    <option value="">Sales Rep</option>
+    <option value="Denise">Denise</option>
+    <option value="other">+ Add new rep...</option>
+  </select>
+  <input id="salesrep-custom" type="text" placeholder="Enter rep name" style="display:none;flex:1;min-width:200px;padding:14px 16px;border:1.5px solid var(--border);border-radius:10px;font-size:16px;font-family:inherit;background:#fafafa;height:52px;">
   <input id="ponum"     type="text"  placeholder="PO Number">
   <input id="orderdate" type="date"  placeholder="Order Date">
   <input id="shipdate"  type="date"  placeholder="Ship Date">
@@ -199,19 +204,19 @@ const SHEETS_URL = "https://script.google.com/macros/s/AKfycby-kybBm3FG4DH10IjQI
 const SKU_MAX_QTY = {
   "KAXIORIGI-4265": 913,
   "KAXIBLACK-3281": 0,
-  "KAXIDARK-3807": 555,
+  "KAXIDARK -3280": 555,
   "KAXIDUSTY-3282": 316,
   "KAXIBUTTE-3277": 0,
   "KAXICHAMP-3276": 225,
   "KAXIMIDI-4266": 668,
   "KAXIBLACK-3286": 0,
-  "KAXIDARK-3808": 100,
+  "KAXIDARK -3290": 100,
   "KAXIDUSTY-3292": 45,
   "KAXIBUTTE-3294": 32,
   "KAXICHAMP-3288": 228,
   "KAXIMINI-4267": 459,
   "KAXIBLACK-3296": 103,
-  "KAXIDARK-3809": 207,
+  "KAXIDARK -3300": 207,
   "KAXIDUSTY-3302": 0,
   "KAXIBUTTE-3306": 123,
   "KAXICHAMP-3298": 470,
@@ -249,7 +254,7 @@ const SKU_MAX_QTY = {
   "KAXICHEET-2454": 0,
   "KAXI-2453": 0,
   "KAXICOOL -2449": 0,
-  "KAXI2875": 0,
+  "KAXI2873": 0,
   "KAXIALL B-4269": 0,
   "KAXINEUTR-4268": 0,
   "KAXIBLACK-1925": 0,
@@ -266,43 +271,107 @@ const SKU_MAX_QTY = {
   "KAXI2758": 1682,
   "KAXI3441": 1028,
   "KAXI3440": 1462,
+  "KAXINEUTR-3442": 9999,
+  "KAXICOLOR-3443": 9999,
+  "KAXIALL B-4310": 9999,
+  "KAXIHOT P-3239": 88,
+  "KAXILIGHT-3240": 202,
+  "KAXIYELLO-3241": 122,
+  "KAXIORANG-3242": 146,
+  "KAXIRED-3243": 248,
+  "KAXIBLUE-3244": 156,
+  "KAXIWHITE-3245": 113,
+  "KAXIBROWN-3246": 105,
+  "KAXIYELLO-3231": 146,
+  "KAXIORANG-3232": 34,
+  "KAXIRED-3233": 119,
+  "KAXIBLUE-3234": 77,
+  "KAXIROYAL-3099": 145,
+  "KAXIBONE-3100": 147,
+  "KAXILIGHT-3101": 186,
+  "KAXIYELLO-3102": 190,
+  "KAXIRED-3103": 162,
+  "KAXIROYAL-3104": 119,
+  "KAXIBONE-3105": 31,
+  "KAXILIGHT-3106": 29,
+  "KAXIYELLO-3107": 103,
+  "KAXIRED-3108": 116,
+  "KAXIMATTE-2538": 1056,
+  "KAXIMATTE-2539": 111,
+  "KAXIMATTE-2540": 49,
+  "KAXIMATTE-2541": 215,
+  "KAXIMATTE-2543": 931,
+  "KAXIMATTE-2545": 30,
+  "KAXIMATTE-2547": 76,
+  "KAXIMATTE-2549": 163,
+  "KAXIMATTE-2550": 785,
+  "KAXIMATTE-2551": 710,
+  "KAXISHINY-2552": 684,
+  "KAXISHINY-2553": 706,
+  "KAXISHINY-2554": 280,
+  "KAXISHINY-2555": 383,
+  "KAXISHINY-2556": 418,
+  "KAXISHINY-2557": 424,
+  "KAXISHINY-2558": 951,
+  "KAXISHINY-2559": 393,
+  "KAXISHINY-2560": 385,
+  "KAXISHINY-2561": 330,
+  "KAXISHINY-2562": 448,
+  "KAXISHINY-2563": 459,
+  "KAXISHINY-2564": 211,
+  "KAXISHINY-2565": 372,
+  "KAXISHINY-2566": 416,
+  "KAXISHINY-2567": 483,
+  "KAXISHINY-2568": 451,
+  "KAXISHINY-2569": 444,
+  "KAXISHINY-2570": 954,
+  "KAXISHINY-2571": 453,
+  "KAXISHINY-2572": 373,
+  "KAXISHINY-2573": 359,
+  "KAXISHINY-2574": 409,
+  "KAXISHINY-2575": 414,
+  "KAXISHINY-2576": 708,
+  "KAXI2797": 118,
+  "KAXI2798": 0,
+  "KAXI2799": 337,
 };
 
 const CATALOG = [
   {
     tab: "Core Products",
+    hideOOS: false,
     groups: [
       {
         name: "Original Wavy Hold Everything",
         products: [
-          { name: "Shiny Light Tortoise", sku: "KAXIORIGI-4265", barcode: "850072071671", msrp: 14.99, ws: 7.50, avail: "HIGH", ship: "" },
-          { name: "Matte Black",          sku: "KAXIBLACK-3281", barcode: "850072071664", msrp: 14.99, ws: 7.50, avail: "OOS",  ship: "May 1" },
-          { name: "Matte Dark Brown",     sku: "KAXIDARK-3807",  barcode: "850081145851", msrp: 14.99, ws: 7.50, avail: "HIGH", ship: "" },
-          { name: "Powder Blue",          sku: "KAXIDUSTY-3282", barcode: "850072071688", msrp: 14.99, ws: 7.50, avail: "HIGH", ship: "May 15" },
-          { name: "Butter Yellow",        sku: "KAXIBUTTE-3277", barcode: "850072071701", msrp: 14.99, ws: 7.50, avail: "OOS",  ship: "May 15" },
-          { name: "Matte Champagne",      sku: "KAXICHAMP-3276", barcode: "850072071633", msrp: 14.99, ws: 7.50, avail: "HIGH", ship: "May 15" },
+          { name: "Shiny Light Tortoise",  sku: "KAXIORIGI-4265", barcode: "850072071671", msrp: 14.99, ws: 7.50, avail: "HIGH", ship: "" },
+          { name: "Matte Black",           sku: "KAXIBLACK-3281", barcode: "850072071664", msrp: 14.99, ws: 7.50, avail: "OOS",  ship: "May 1" },
+          { name: "Matte Chocolate Brown", sku: "KAXIDARK -3280",  barcode: "850072071718", msrp: 14.99, ws: 7.50, avail: "HIGH", ship: "" },
+          { name: "Powder Blue",           sku: "KAXIDUSTY-3282", barcode: "850072071688", msrp: 14.99, ws: 7.50, avail: "HIGH", ship: "May 15" },
+          { name: "Butter Yellow",         sku: "KAXIBUTTE-3277", barcode: "850072071701", msrp: 14.99, ws: 7.50, avail: "OOS",  ship: "May 15" },
+          { name: "Matte Champagne",       sku: "KAXICHAMP-3276", barcode: "850072071633", msrp: 14.99, ws: 7.50, avail: "HIGH", ship: "May 15" },
         ]
       },
       {
         name: "Midi Wavy Hold Everything",
         products: [
-          { name: "Shiny Light Tortoise", sku: "KAXIMIDI-4266", barcode: "810215500369", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
-          { name: "Matte Black",          sku: "KAXIBLACK-3286", barcode: "850072071763", msrp: 13.99, ws: 7.00, avail: "OOS",  ship: "May 15" },
-          { name: "Matte Dark Brown",     sku: "KAXIDARK-3808",  barcode: "850081145868", msrp: 13.99, ws: 7.00, avail: "HIGH",  ship: "" },
-          { name: "Powder Blue",          sku: "KAXIDUSTY-3292", barcode: "850072071787", msrp: 13.99, ws: 7.00, avail: "LOW",  ship: "May 15" },
-          { name: "Butter Yellow",        sku: "KAXIBUTTE-3294", barcode: "850072071800", msrp: 13.99, ws: 7.00, avail: "LOW",  ship: "June 25" },
-          { name: "Matte Champagne",      sku: "KAXICHAMP-3288", barcode: "850072071732", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "May 15" },
+          { name: "Shiny Light Tortoise",  sku: "KAXIMIDI-4266",  barcode: "810215500369", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Matte Black",           sku: "KAXIBLACK-3286", barcode: "850072071763", msrp: 13.99, ws: 7.00, avail: "OOS",  ship: "May 15" },
+          { name: "Matte Chocolate Brown", sku: "KAXIDARK -3290",  barcode: "850072071817", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "May 15" },
+          { name: "Powder Blue",           sku: "KAXIDUSTY-3292", barcode: "850072071787", msrp: 13.99, ws: 7.00, avail: "LOW",  ship: "May 15" },
+          { name: "Butter Yellow",         sku: "KAXIBUTTE-3294", barcode: "850072071800", msrp: 13.99, ws: 7.00, avail: "LOW",  ship: "June 25" },
+          { name: "Matte Champagne",       sku: "KAXICHAMP-3288", barcode: "850072071732", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "May 15" },
         ]
       },
       {
         name: "Mini Wavy Hold Everything",
         products: [
-          { name: "Shiny Light Tortoise", sku: "KAXIMINI-4267", barcode: "810215500376", msrp: 11.99, ws: 6.00, avail: "HIGH", ship: "" },
-          { name: "Matte Black",          sku: "KAXIBLACK-3296", barcode: "850072071862", msrp: 11.99, ws: 6.00, avail: "MED",  ship: "May 15" },
-          { name: "Matte Dark Brown",     sku: "KAXIDARK-3809",  barcode: "850081145875", msrp: 11.99, ws: 6.00, avail: "HIGH", ship: "" },
-          { name: "Powder Blue",          sku: "KAXIDUSTY-3302", barcode: "850072071886", msrp: 11.99, ws: 6.00, avail: "OOS",  ship: "June 25" },
-          { name: "Butter Yellow",        sku: "KAXIBUTTE-3306", barcode: "850072071909", msrp: 11.99, ws: 6.00, avail: "MED", ship: "June 25" },
-          { name: "Matte Champagne",      sku: "KAXICHAMP-3298", barcode: "850072071831", msrp: 11.99, ws: 6.00, avail: "HIGH", ship: "June 25" },
+          { name: "Shiny Light Tortoise",  sku: "KAXIMINI-4267",  barcode: "810215500376", msrp: 11.99, ws: 6.00, avail: "HIGH", ship: "" },
+          { name: "Matte Black",           sku: "KAXIBLACK-3296", barcode: "850072071862", msrp: 11.99, ws: 6.00, avail: "MED",  ship: "May 15" },
+          { name: "Matte Chocolate Brown", sku: "KAXIDARK -3300",  barcode: "850072071916", msrp: 11.99, ws: 6.00, avail: "HIGH", ship: "" },
+          { name: "Powder Blue",           sku: "KAXIDUSTY-3302", barcode: "850072071886", msrp: 11.99, ws: 6.00, avail: "OOS",  ship: "June 25" },
+          { name: "Butter Yellow",         sku: "KAXIBUTTE-3306", barcode: "850072071909", msrp: 11.99, ws: 6.00, avail: "MED",  ship: "June 25" },
+          { name: "Matte Champagne",       sku: "KAXICHAMP-3298", barcode: "850072071831", msrp: 11.99, ws: 6.00, avail: "HIGH", ship: "June 25" },
         ]
       },
       {
@@ -331,8 +400,8 @@ const CATALOG = [
         name: "Mini Hold Everything (Classic)",
         products: [
           { name: "Shiny Light Tortoise", sku: "KAXILIGHT-2601",  barcode: "850077861529", msrp: 11.99, ws: 6.00, avail: "OOS",  ship: "May 1" },
-          { name: "Shiny Dark Tortoise",  sku: "KAXIDARK -2630",  barcode: "850077861581", msrp: 11.99, ws: 6.00, avail: "LOW", ship: "May 1" },
-          { name: "Matte Black",          sku: "KAXIBLACK-3352",  barcode: "850077861277", msrp: 11.99, ws: 6.00, avail: "MED", ship: "May 1" },
+          { name: "Shiny Dark Tortoise",  sku: "KAXIDARK -2630",  barcode: "850077861581", msrp: 11.99, ws: 6.00, avail: "LOW",  ship: "May 1" },
+          { name: "Matte Black",          sku: "KAXIBLACK-3352",  barcode: "850077861277", msrp: 11.99, ws: 6.00, avail: "MED",  ship: "May 1" },
           { name: "Matte Bone",           sku: "KAXIBONE-2367",   barcode: "850077861512", msrp: 11.99, ws: 6.00, avail: "HIGH", ship: "May 1" },
           { name: "Matte Dark Brown",     sku: "KAXIDARK -2364",  barcode: "850077861536", msrp: 11.99, ws: 6.00, avail: "HIGH", ship: "May 1" },
           { name: "Matte Champagne",      sku: "KAXICHAMP-2366",  barcode: "850077861550", msrp: 11.99, ws: 6.00, avail: "HIGH", ship: "May 1" },
@@ -346,7 +415,7 @@ const CATALOG = [
           { name: "Matte Black",          sku: "KAXIMATTE-2476", barcode: "850050100072", msrp: 13.99, ws: 7.00, avail: "OOS",  ship: "May 1" },
           { name: "Matte Bone",           sku: "KAXIMATTE-2480", barcode: "850050100089", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "May 1" },
           { name: "Shiny Red",            sku: "KAXISHINY-2495", barcode: "850072071565", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "May 1" },
-          { name: "Shiny Dark Brown",     sku: "KAXISHINY-2487", barcode: "850072071244", msrp: 13.99, ws: 7.00, avail: "MED", ship: "May 1" },
+          { name: "Shiny Dark Brown",     sku: "KAXISHINY-2487", barcode: "850072071244", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "May 1" },
         ]
       },
       {
@@ -354,8 +423,8 @@ const CATALOG = [
         products: [
           { name: "Shiny Light Tortoise", sku: "KAXISHINY-2527", barcode: "810215500284", msrp: 12.99, ws: 6.50, avail: "OOS",  ship: "May 1" },
           { name: "Shiny Dark Tortoise",  sku: "KAXISHINY-2528", barcode: "810215500291", msrp: 12.99, ws: 6.50, avail: "OOS",  ship: "May 1" },
-          { name: "Matte Black",          sku: "KAXIMATTE-2510", barcode: "810215500345", msrp: 12.99, ws: 6.50, avail: "OOS",  ship: "" },
-          { name: "Matte Bone",           sku: "KAXIMATTE-2513", barcode: "810215500352", msrp: 12.99, ws: 6.50, avail: "OOS",  ship: "" },
+          { name: "Matte Black",          sku: "KAXIMATTE-2510", barcode: "810215500345", msrp: 12.99, ws: 6.50, avail: "OOS",  ship: "July 1" },
+          { name: "Matte Bone",           sku: "KAXIMATTE-2513", barcode: "810215500352", msrp: 12.99, ws: 6.50, avail: "OOS",  ship: "July 1" },
           { name: "Shiny Red",            sku: "KAXISHINY-2858", barcode: "810215500383", msrp: 12.99, ws: 6.50, avail: "HIGH", ship: "" },
           { name: "Shiny Dark Brown",     sku: "KAXISHINY-3320", barcode: "810215500390", msrp: 12.99, ws: 6.50, avail: "HIGH", ship: "" },
         ]
@@ -363,26 +432,21 @@ const CATALOG = [
       {
         name: "Jumbo Scrunchie",
         products: [
-          { name: "Black",      sku: "KAXIBLACK-2447", barcode: "850050100041", msrp: 19.99, ws: 10.00, avail: "OOS",  ship: "June 25" },
-          { name: "Ivory",      sku: "KAXIIVORY-2444", barcode: "850050100355", msrp: 19.99, ws: 10.00, avail: "OOS",  ship: "June 25" },
-          { name: "Cheetah",    sku: "KAXICHEET-2454", barcode: "850050100584", msrp: 19.99, ws: 10.00, avail: "OOS",  ship: "June 25" },
-          { name: "Polka Dot",  sku: "KAXI-2453",      barcode: "850050100904", msrp: 19.99, ws: 10.00, avail: "OOS",  ship: "June 25" },
-          { name: "Cool Brown", sku: "KAXICOOL -2449", barcode: "850050100010", msrp: 19.99, ws: 10.00, avail: "OOS",  ship: "June 25" },
+          { name: "Black",      sku: "KAXIBLACK-2447", barcode: "850050100041", msrp: 19.99, ws: 10.00, avail: "OOS", ship: "July 1" },
+          { name: "Ivory",      sku: "KAXIIVORY-2444", barcode: "850050100355", msrp: 19.99, ws: 10.00, avail: "OOS", ship: "July 1" },
+          { name: "Cheetah",    sku: "KAXICHEET-2454", barcode: "850050100584", msrp: 19.99, ws: 10.00, avail: "OOS", ship: "July 1" },
+          { name: "Polka Dot",  sku: "KAXI-2453",      barcode: "850050100904", msrp: 19.99, ws: 10.00, avail: "OOS", ship: "July 1" },
+          { name: "Cool Brown", sku: "KAXICOOL -2449", barcode: "850050100010", msrp: 19.99, ws: 10.00, avail: "OOS", ship: "July 1" },
         ]
       },
       {
         name: "Hair Ties",
         products: [
-          { name: "Skinny High Intensi-ties — All Cheetah", sku: "KAXI2875",       barcode: "",               msrp: 13.99, ws: 7.00, avail: "OOS", ship: "May 1" },
-          { name: "Skinny High Intensi-ties — All Black",   sku: "KAXIALL B-4269", barcode: "850077861727", msrp: 13.99, ws: 7.00, avail: "OOS", ship: "" },
-          { name: "Skinny High Intensi-ties — Neutral Pack", sku: "KAXINEUTR-4268", barcode: "810215500123", msrp: 13.99, ws: 7.00, avail: "OOS", ship: "" },
+          { name: "Skinny High Intensi-ties — Cheetah and Black", sku: "KAXI2873", barcode: "850077861727",   msrp: 13.99, ws: 7.00, avail: "OOS", ship: "May 1" },
+          { name: "Skinny High Intensi-ties — All Black",   sku: "KAXIALL B-4269", barcode: "850077861727",   msrp: 13.99, ws: 7.00, avail: "OOS", ship: "" },
+          { name: "Skinny High Intensi-ties — Neutral Pack", sku: "KAXINEUTR-4268", barcode: "810215500123",  msrp: 13.99, ws: 7.00, avail: "OOS", ship: "" },
         ]
       },
-    ]
-  },
-  {
-    tab: "Add-Ons",
-    groups: [
       {
         name: "Sleep Scrunchie",
         products: [
@@ -392,51 +456,130 @@ const CATALOG = [
         ]
       },
       {
+        name: "Skinny Sleep Scrunchies",
+        products: [
+          { name: "Neutral Pack",   sku: "KAXINEUTR-3442", barcode: "850077861871", msrp: 19.99, ws: 10.00, avail: "HIGH", ship: "" },
+          { name: "Colorful Pack",  sku: "KAXICOLOR-3443", barcode: "850077861888", msrp: 19.99, ws: 10.00, avail: "HIGH", ship: "" },
+          { name: "All Black Pack", sku: "KAXIALL B-4310", barcode: "810215500642", msrp: 19.99, ws: 10.00, avail: "HIGH", ship: "" },
+        ]
+      },
+      {
         name: "GRWM Sets",
         products: [
-          { name: "Blue Striped",      sku: "KAXIBLUE -3314",  barcode: "850072071497", msrp: 24.99, ws: 12.50, avail: "LOW", ship: "" },
-          { name: "Neutral Checkered", sku: "KAXINEUTR-2396",  barcode: "850050100898", msrp: 24.99, ws: 12.50, avail: "LOW", ship: "June 15" },
-          { name: "Cheetah",           sku: "KAXICHEET-2398",  barcode: "850077861918", msrp: 24.99, ws: 12.50, avail: "OOS", ship: "June 15" },
-          { name: "Polka Dot Brown",   sku: "KAXIBROWN-3888",  barcode: "850081145318", msrp: 24.99, ws: 12.50, avail: "OOS", ship: "" },
-          { name: "Brown Striped",     sku: "KAXIBROWN-3878",  barcode: "850081145301", msrp: 24.99, ws: 12.50, avail: "OOS", ship: "" },
+          { name: "Polka Dot Brown",   sku: "KAXIBROWN-3888",  barcode: "850081145318", msrp: 24.99, ws: 12.50, avail: "OOS", ship: "April 20" },
+          { name: "Brown Striped",     sku: "KAXIBROWN-3878",  barcode: "850081145301", msrp: 24.99, ws: 12.50, avail: "OOS", ship: "April 20" },
         ]
       },
       {
         name: "Trucker Hats",
         products: [
-          { name: "Bad Hair Day — Black", sku: "KAXIBLACK-2289", barcode: "850072071220", msrp: 44.99, ws: 22.50, avail: "LOW",  ship: "" },
-          { name: "Bad Hair Day — Camo",  sku: "KAXICAMO-2292",  barcode: "850077861840", msrp: 44.99, ws: 22.50, avail: "LOW",  ship: "" },
+          { name: "Bad Hair Day — Black", sku: "KAXIBLACK-2289", barcode: "850072071220", msrp: 44.99, ws: 22.50, avail: "LOW", ship: "" },
+          { name: "Bad Hair Day — Camo",  sku: "KAXICAMO-2292",  barcode: "850077861840", msrp: 44.99, ws: 22.50, avail: "LOW", ship: "" },
         ]
       },
       {
         name: "Hair Care",
         products: [
-          { name: "Hair Perfume — Original Scent",  sku: "KAXI3336", barcode: "850050100713", msrp: 24.00, ws: 12.00, avail: "HIGH", ship: "" },
-          { name: "Yellow Scalp to Ends Brush",     sku: "KAXI2758", barcode: "850050100843", msrp: 29.99, ws: 15.00, avail: "HIGH", ship: "" },
-          { name: "Mini Yellow Scalp to Ends Brush",sku: "KAXI3441", barcode: "850077861253", msrp: 24.99, ws: 12.50, avail: "HIGH", ship: "" },
-          { name: "Slick Back Pack",                sku: "KAXI3440", barcode: "850050100195", msrp: 24.99, ws: 12.50, avail: "HIGH", ship: "" },
+          { name: "Hair Perfume — Original Scent",   sku: "KAXI3336", barcode: "850050100713", msrp: 24.00, ws: 12.00, avail: "HIGH", ship: "" },
+          { name: "Yellow Scalp to Ends Brush",      sku: "KAXI2758", barcode: "850050100843", msrp: 29.99, ws: 15.00, avail: "HIGH", ship: "" },
+          { name: "Mini Yellow Scalp to Ends Brush", sku: "KAXI3441", barcode: "850077861253", msrp: 24.99, ws: 12.50, avail: "HIGH", ship: "" },
+          { name: "Slick Back Pack",                 sku: "KAXI3440", barcode: "850050100195", msrp: 24.99, ws: 12.50, avail: "HIGH", ship: "" },
         ]
       },
     ]
   },
   {
-    tab: "Q1/Q2 Seasonal",
+    tab: "ATS Seasonal",
+    hideOOS: true,
     groups: [
       {
-        name: "Q1/Q2 Seasonal Products",
+        name: "Oversized Lay Down Claw — Matte",
         products: [
-          { name: "— Products coming soon —", sku: "TBD", barcode: "", msrp: 0, ws: 0, avail: "TBD", ship: "" },
+          { name: "Matte Black", sku: "KAXIMATTE-2538", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Matte Cream", sku: "KAXIMATTE-2539", barcode: "", msrp: 13.99, ws: 7.00, avail: "MED", ship: "" },
+          { name: "Matte Brown", sku: "KAXIMATTE-2540", barcode: "", msrp: 13.99, ws: 7.00, avail: "LOW", ship: "" },
+          { name: "Matte Bone", sku: "KAXIMATTE-2541", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Matte Light Grey", sku: "KAXIMATTE-2543", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Matte Hot Pink", sku: "KAXIMATTE-2545", barcode: "", msrp: 13.99, ws: 7.00, avail: "LOW", ship: "" },
+          { name: "Matte Bright Red", sku: "KAXIMATTE-2547", barcode: "", msrp: 13.99, ws: 7.00, avail: "MED", ship: "" },
+          { name: "Matte Navy Blue", sku: "KAXIMATTE-2549", barcode: "", msrp: 13.99, ws: 7.00, avail: "MED", ship: "" },
+          { name: "Matte Periwinkle", sku: "KAXIMATTE-2550", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Matte Forest Green", sku: "KAXIMATTE-2551", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
         ]
-      }
-    ]
-  },
-  {
-    tab: "Q3/Q4 Seasonal",
-    groups: [
+      },
       {
-        name: "Q3/Q4 Seasonal Products",
+        name: "Oversized Lay Down Claw — Shiny",
         products: [
-          { name: "— Products coming soon —", sku: "TBD", barcode: "", msrp: 0, ws: 0, avail: "TBD", ship: "" },
+          { name: "Shiny Black", sku: "KAXISHINY-2552", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Cream", sku: "KAXISHINY-2553", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Dark Brown", sku: "KAXISHINY-2554", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Light Brown", sku: "KAXISHINY-2555", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Berry Brown", sku: "KAXISHINY-2556", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Dark Grey", sku: "KAXISHINY-2557", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Light Grey", sku: "KAXISHINY-2558", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Champagne", sku: "KAXISHINY-2559", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Bone", sku: "KAXISHINY-2560", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Emerald Green", sku: "KAXISHINY-2561", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Lucky Green", sku: "KAXISHINY-2562", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Burnt Orange", sku: "KAXISHINY-2563", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Bright Red", sku: "KAXISHINY-2564", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Rose Pink", sku: "KAXISHINY-2565", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Orchid", sku: "KAXISHINY-2566", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Peach", sku: "KAXISHINY-2567", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Watermelon", sku: "KAXISHINY-2568", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Turquoise", sku: "KAXISHINY-2569", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Lavender", sku: "KAXISHINY-2570", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Mustard", sku: "KAXISHINY-2571", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Sky Blue", sku: "KAXISHINY-2572", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Navy Blue", sku: "KAXISHINY-2573", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Royal Blue", sku: "KAXISHINY-2574", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Baby Blue", sku: "KAXISHINY-2575", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Clear", sku: "KAXISHINY-2576", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Shiny Dark Tortoise", sku: "KAXI2797", barcode: "", msrp: 13.99, ws: 7.00, avail: "MED", ship: "" },
+          { name: "Shiny Light Tortoise", sku: "KAXI2798", barcode: "", msrp: 13.99, ws: 7.00, avail: "OOS", ship: "" },
+          { name: "Shiny Cow Print", sku: "KAXI2799", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+        ]
+      },
+      {
+        name: "Polka Dot Oversized Lay Down Claw",
+        products: [
+          { name: "Royal Blue", sku: "KAXIROYAL-3099", barcode: "", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "" },
+          { name: "Bone",       sku: "KAXIBONE-3100",  barcode: "", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "" },
+          { name: "Light Pink", sku: "KAXILIGHT-3101", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Yellow",     sku: "KAXIYELLO-3102", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Red",        sku: "KAXIRED-3103",   barcode: "", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "" },
+        ]
+      },
+      {
+        name: "Polka Dot Lay Down 2.0",
+        products: [
+          { name: "Royal Blue", sku: "KAXIROYAL-3104", barcode: "", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "" },
+          { name: "Bone",       sku: "KAXIBONE-3105",  barcode: "", msrp: 13.99, ws: 7.00, avail: "LOW",  ship: "" },
+          { name: "Light Pink", sku: "KAXILIGHT-3106", barcode: "", msrp: 13.99, ws: 7.00, avail: "LOW",  ship: "" },
+          { name: "Yellow",     sku: "KAXIYELLO-3107", barcode: "", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "" },
+          { name: "Red",        sku: "KAXIRED-3108",   barcode: "", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "" },
+        ]
+      },
+      {
+        name: "Jelly Lay Down 2.0",
+        products: [
+          { name: "Jelly Yellow",      sku: "KAXIYELLO-3231", barcode: "", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "" },
+          { name: "Jelly Orange",      sku: "KAXIORANG-3232", barcode: "", msrp: 13.99, ws: 7.00, avail: "LOW",  ship: "" },
+          { name: "Jelly Dark Orange", sku: "KAXIRED-3233",   barcode: "", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "" },
+          { name: "Jelly Blue",        sku: "KAXIBLUE-3234",  barcode: "", msrp: 13.99, ws: 7.00, avail: "LOW",  ship: "" },
+        ]
+      },
+      {
+        name: "Jelly Oversized Lay Down Claw",
+        products: [
+          { name: "Jelly Hot Pink",    sku: "KAXIHOT P-3239", barcode: "", msrp: 13.99, ws: 7.00, avail: "LOW",  ship: "" },
+          { name: "Jelly Light Pink",  sku: "KAXILIGHT-3240", barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Jelly Yellow",      sku: "KAXIYELLO-3241", barcode: "", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "" },
+          { name: "Jelly Orange",      sku: "KAXIORANG-3242", barcode: "", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "" },
+          { name: "Jelly Dark Orange", sku: "KAXIRED-3243",   barcode: "", msrp: 13.99, ws: 7.00, avail: "HIGH", ship: "" },
+          { name: "Jelly Blue",        sku: "KAXIBLUE-3244",  barcode: "", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "" },
+          { name: "Jelly White",       sku: "KAXIWHITE-3245", barcode: "", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "" },
+          { name: "Jelly Brown",       sku: "KAXIBROWN-3246", barcode: "", msrp: 13.99, ws: 7.00, avail: "MED",  ship: "" },
         ]
       }
     ]
@@ -496,6 +639,9 @@ function build() {
         const oos = isOOS(prod.avail);
         const max = KEY_MAX[key] || 0;
 
+        // Hide OOS items on ATS tab
+        if (oos && cat.hideOOS) return;
+
         const row = document.createElement("div");
         row.className = "prow" + (oos ? " oos" : "");
         row.id = "r-" + key;
@@ -529,6 +675,13 @@ function build() {
   });
 
   document.getElementById("orderdate").value = new Date().toISOString().split("T")[0];
+  // Auto-generate PO number: KAXI-YYYYMMDD-XXXX
+  const now = new Date();
+  const datePart = String(now.getMonth()+1).padStart(2,'0') +
+    String(now.getDate()).padStart(2,'0') +
+    now.getFullYear().toString().slice(-2);
+  const randPart = Math.floor(1000 + Math.random() * 9000);
+  document.getElementById("ponum").value = datePart + "-" + randPart;
 }
 
 function switchTab(ti) {
@@ -575,7 +728,7 @@ function recalc() {
 
 function openModal() {
   document.getElementById("m-customer").textContent = document.getElementById("customer").value || "—";
-  document.getElementById("m-rep").textContent      = document.getElementById("salesrep").value || "—";
+  document.getElementById("m-rep").textContent      = getSalesRep() || "—";
   document.getElementById("m-po").textContent       = document.getElementById("ponum").value || "—";
   document.getElementById("m-date").textContent     = document.getElementById("orderdate").value || "—";
   document.getElementById("m-shipdate").textContent = document.getElementById("shipdate").value || "—";
@@ -624,7 +777,7 @@ function closeModal() {
 function saveDraft() {
   const draft = {
     customer: document.getElementById("customer").value,
-    salesrep: document.getElementById("salesrep").value,
+    salesrep: getSalesRep(),
     ponum:    document.getElementById("ponum").value,
     shipdate: document.getElementById("shipdate").value,
     shipto:   document.getElementById("shipto").value,
@@ -640,7 +793,17 @@ function loadDraft() {
   if (!saved) return;
   const draft = JSON.parse(saved);
   if (draft.customer) document.getElementById("customer").value = draft.customer;
-  if (draft.salesrep) document.getElementById("salesrep").value = draft.salesrep;
+  if (draft.salesrep) {
+    const sel = document.getElementById("salesrep");
+    const opts = Array.from(sel.options).map(o => o.value);
+    if (opts.includes(draft.salesrep)) {
+      sel.value = draft.salesrep;
+    } else {
+      sel.value = "other";
+      document.getElementById("salesrep-custom").style.display = "block";
+      document.getElementById("salesrep-custom").value = draft.salesrep;
+    }
+  }
   if (draft.ponum)    document.getElementById("ponum").value    = draft.ponum;
   if (draft.shipdate) document.getElementById("shipdate").value = draft.shipdate;
   if (draft.shipto)   document.getElementById("shipto").value   = draft.shipto;
@@ -657,6 +820,24 @@ function loadDraft() {
 
 let customerData = {};
 let orderedToday = {};
+
+
+function handleRepChange(sel) {
+  const custom = document.getElementById("salesrep-custom");
+  if (sel.value === "other") {
+    custom.style.display = "block";
+    custom.focus();
+  } else {
+    custom.style.display = "none";
+    custom.value = "";
+  }
+}
+
+function getSalesRep() {
+  const sel = document.getElementById("salesrep");
+  const custom = document.getElementById("salesrep-custom");
+  return sel.value === "other" ? custom.value : sel.value;
+}
 
 function fetchCustomers() {
   fetch(SHEETS_URL)
@@ -680,6 +861,11 @@ function updateAvailableDisplay() {
         KEY_MAX[key] = available;
         const el = document.getElementById("avail-" + key);
         if (el) el.textContent = available < 9999 ? available + " avail" : "";
+        // Hide row on ATS tab if now OOS
+        if (cat.hideOOS && available === 0) {
+          const row = document.getElementById("r-" + key);
+          if (row) row.style.display = "none";
+        }
       });
     });
   });
@@ -711,12 +897,22 @@ document.addEventListener("click", function(e) {
 
 function submitOrder() {
   const customer = document.getElementById("customer").value || "—";
-  const rep      = document.getElementById("salesrep").value || "—";
+  const rep      = getSalesRep() || "—";
   const po       = document.getElementById("ponum").value || "—";
   const sd       = document.getElementById("shipdate").value || "—";
   const st       = document.getElementById("shipto").value || "—";
   const od       = document.getElementById("orderdate").value || "—";
   const nt       = document.getElementById("netterms").value || "—";
+
+  // Calculate due date based on net terms
+  function getDueDate(orderDate, terms) {
+    const d = new Date(orderDate);
+    if (terms === "Net 30") d.setDate(d.getDate() + 30);
+    else if (terms === "Net 60") d.setDate(d.getDate() + 60);
+    else if (terms === "Net 90") d.setDate(d.getDate() + 90);
+    return d.toISOString().split("T")[0];
+  }
+  const dueDate = getDueDate(od, nt);
 
   let body = "ORDER DETAILS\n";
   body += "================\n";
@@ -757,6 +953,38 @@ function submitOrder() {
   body += "================\n";
   body += "TOTAL: " + grandQty + " units / $" + grandTotal.toFixed(2) + "\n";
   body += "\nShip To: " + st;
+
+  // QuickBooks formatted section
+  body += "\n\n\n";
+  body += "----------------------------------------\n";
+  body += "QUICKBOOKS INVOICE\n";
+  body += "----------------------------------------\n";
+  body += "Customer:      " + customer + "\n";
+  body += "Invoice Date:  " + od + "\n";
+  body += "Due Date:      " + dueDate + "\n";
+  body += "Terms:         " + nt + "\n";
+  body += "Ship To:       " + st + "\n";
+  body += "PO Number:     " + po + "\n\n";
+  body += "PRODUCT                          QTY    UNIT PRICE    AMOUNT\n";
+  body += "-------------------------------------------------------------\n";
+  CATALOG.forEach((cat, ti) => {
+    cat.groups.forEach((grp, gi) => {
+      grp.products.forEach((prod, pi) => {
+        const q = qtys[ti + "-" + gi + "-" + pi] || 0;
+        if (q > 0 && prod.ws > 0) {
+          const amt = (q * prod.ws).toFixed(2);
+          const name = (prod.name + " (" + prod.sku + ")").padEnd(32, " ").substring(0, 32);
+          const qty  = String(q).padStart(4, " ");
+          const price = ("$" + prod.ws.toFixed(2)).padStart(10, " ");
+          const total = ("$" + amt).padStart(10, " ");
+          body += name + " " + qty + " " + price + " " + total + "\n";
+        }
+      });
+    });
+  });
+  body += "-------------------------------------------------------------\n";
+  body += "TOTAL:".padEnd(32, " ") + "      " + ("$" + grandTotal.toFixed(2)).padStart(10, " ") + "\n";
+  body += "----------------------------------------\n";
 
   const payload = {
     date: od, customer, rep, po, shipDate: sd, shipTo: st,
